@@ -37,19 +37,15 @@ I also renamed and organized the columns to make them easier to work with during
 
 Some indicators had missing values scattered throughout the years. Instead of removing them or filling them in manually, I used formulas to automatically fill in the missing values by referencing the nearest known data points. This kept the data continuous and allowed the charts to reflect more accurate trends.  
 ```
-{
 =IF(B3<>0, B3, FORECAST.LINEAR(A2, FILTER(B:B, B:B<>0), FILTER(A:A, B:B<>0)))
-}
 ```  
 ![FillingData](https://github.com/user-attachments/assets/7827a88d-370a-4a96-8c35-ef208e4c7905)  
   
 ### 📊 **Named Ranges & Interactive Charts**  
   
 ```
-{
 =OFFSET('Call Data here'!$BD$1,1,0,'Call Data here'!$BC$1-1,1)
 #"$BD$1": is the starting cell of the named range, "$BC$1": is the count of the number of cells in a column
-}
 ```  
 To make the dashboard more dynamic, I used named ranges to create charts that respond to user selections. This allowed me to switch between different scenarios (like comparing two datasets) without duplicating charts or making a second dashboard. It made the dashboard more flexible and easier to explore.  
 ![Dynamic Charts](https://github.com/user-attachments/assets/e1ff8743-ded2-4994-98c2-0113a6de87c8)  
