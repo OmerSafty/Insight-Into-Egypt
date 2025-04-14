@@ -45,13 +45,13 @@ Some indicators had missing values scattered throughout the years. Instead of re
   
 ![FillingData](https://github.com/user-attachments/assets/7827a88d-370a-4a96-8c35-ef208e4c7905)  
   
-### 📊 **Named Ranges & Interactive Charts**  
+### 📊 **Dynamic Named Ranges & Interactive Charts**  
   
+To make the dashboard more dynamic, I used named ranges to create charts that respond to user selections. This allowed me to switch between different scenarios (like comparing two datasets) without duplicating charts or making a second dashboard. It made the dashboard more flexible and easier to explore.  
 ```
 =OFFSET('Call Data here'!$BD$1,1,0,'Call Data here'!$BC$1-1,1)
 #"$BD$1": is the starting cell of the named range, "$BC$1": is the count of the number of cells in a column
 ```  
-To make the dashboard more dynamic, I used named ranges to create charts that respond to user selections. This allowed me to switch between different scenarios (like comparing two datasets) without duplicating charts or making a second dashboard. It made the dashboard more flexible and easier to explore.  
   
 ![Dynamic Charts](https://github.com/user-attachments/assets/e1ff8743-ded2-4994-98c2-0113a6de87c8)  
 
